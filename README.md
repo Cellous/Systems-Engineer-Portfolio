@@ -83,19 +83,6 @@ Clone the repository:
  ## License
  This project is licensed under the MIT License – see the `LICENSE` file for details.
  
- ## Overview
-
-Monitoring & Observability – Prometheus + Grafana dashboards, Azure Monitor workbooks.
-
-ITIL Processes – Incident, Request, Problem, Change templates + FastAPI ITSM mini-app.
-
-Automation – PowerShell DSC & scripts for Windows services; Python scripts for synthetic checks and Citrix telemetry parsing.
-
-Cloud & Virtualization – Terraform configs for Azure and VMware vSphere (mock configs included).
-
-Security & Backup – Snapshot/restore scripts for Azure + VMware, CIS baseline documentation.
-
-Networking & Performance – TCP/IP diagnostics, synthetic probes, bottleneck simulation.
 
 
 
