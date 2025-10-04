@@ -1,25 +1,49 @@
 # Systems-Engineer-Portfolio
 
-Portfolio project demonstrating systems engineering skills: ITIL processes, monitoring, automation with Python &amp; PowerShell, Azure/VMware IaC, Citrix telemetry analysis, and enterprise infrastructure support.
+This project is designed as a portfolio showcase for Systems Engineer roles, demonstrating practical skills in enterprise infrastructure support, monitoring, automation, cloud services, and ITIL-aligned operations.
 
-This repository demonstrates systems engineering skills in monitoring, automation, ITIL-driven service management, backup/redundancy strategies, and enterprise infrastructure support.
+Portfolio highlights include:
 
-It includes Python & PowerShell scripting, Azure/VMware Infrastructure-as-Code, Prometheus/Grafana monitoring, Citrix telemetry analysis, and ITIL process templates.
+ - ITIL processes and service management
 
- ## Overview
+ - Monitoring & observability with Prometheus, Grafana, and Azure Monitor
 
-Monitoring & Observability – Prometheus + Grafana dashboards, Azure Monitor workbooks.
+ - Infrastructure-as-Code with Terraform (Azure & VMware)
 
-ITIL Processes – Incident, Request, Problem, Change templates + FastAPI ITSM mini-app.
+ - Automation with PowerShell DSC and Python scripts
 
-Automation – PowerShell DSC & scripts for Windows services; Python scripts for synthetic checks and Citrix telemetry parsing.
+ - Security, backup, and redundancy strategies
 
-Cloud & Virtualization – Terraform configs for Azure and VMware vSphere (mock configs included).
+## Getting Started
+Clone the repository:
 
-Security & Backup – Snapshot/restore scripts for Azure + VMware, CIS baseline documentation.
+git clone https://github.com/Cellous/Systems-Engineer-Portfolio.git
+cd Systems-Engineer-Portfolio
 
-Networking & Performance – TCP/IP diagnostics, synthetic probes, bottleneck simulation.
+ Requirements:
 
+  - Docker (for Prometheus/Grafana monitoring stack)
+
+  - Python 3.9+
+
+  - PowerShell 7+
+
+  - Terraform CLI
+ 
+## Key Skills Demonstrated
+
+ - ITIL Service Management – Incident, Request, Problem, and Change processes
+
+ - Infrastructure-as-Code (IaC) – Azure Monitor & VMware vSphere via Terraform
+
+ - Monitoring & Observability – Prometheus + Grafana dashboards, Azure Monitor workbooks
+
+ - Automation – PowerShell DSC, backup scripts, and Python synthetic checks
+
+ - Security & Compliance – CIS baselines, backup/restore scripts, redundancy planning
+
+ - Networking & Performance – TCP/IP diagnostics, packet captures, bottleneck simulations
+ 
 ## Repository Structure
 /docs               → Architecture diagrams, ITIL runbooks, PIR templates
 /monitoring         → Prometheus + Grafana stack (docker-compose)
@@ -38,11 +62,40 @@ Networking & Performance – TCP/IP diagnostics, synthetic probes, bottleneck si
 | Job Requirement | Repo Evidence |
 |-----------------|---------------|
 | Manage & monitor systems | `/monitoring/*`, Grafana dashboards, Azure workbooks |
-| Daily ITSM usage | `/itsm/*` (FastAPI tickets, CLI clients), `/docs/runbooks` |
-| OS install/config/maintain | `/scripts/powershell`, `/config/ansible`, DSC |
+| Daily ITSM usage | `/itsm/*`, `/docs/runbooks` |
+| OS install/config/maintain | `/scripts/powershell`, DSC |
 | Proactive performance & availability | `/scripts/python/synthetic_checks.py` |
 | Security, backup, redundancy | `/backup/*`, `/security/*` |
 | Automation/scripting | `/scripts/powershell`, `/scripts/python` |
 | Citrix performance tuning | `/scripts/python/hdx_telemetry_parser.py` |
 | Azure & VMware experience | `/iac/azure/*`, `/iac/vmware/*` |
 | Networking knowledge | `/docs/networking/*`, iperf & packet capture notes |
+
+## Screenshots (Coming Soon)
+
+ - Grafana dashboards for system performance
+
+ - ITSM FastAPI ticketing app UI
+
+ - Example PowerShell service healer in action
+ 
+ ## License
+ This project is licensed under the MIT License – see the `LICENSE` file for details.
+ 
+ ## Overview
+
+Monitoring & Observability – Prometheus + Grafana dashboards, Azure Monitor workbooks.
+
+ITIL Processes – Incident, Request, Problem, Change templates + FastAPI ITSM mini-app.
+
+Automation – PowerShell DSC & scripts for Windows services; Python scripts for synthetic checks and Citrix telemetry parsing.
+
+Cloud & Virtualization – Terraform configs for Azure and VMware vSphere (mock configs included).
+
+Security & Backup – Snapshot/restore scripts for Azure + VMware, CIS baseline documentation.
+
+Networking & Performance – TCP/IP diagnostics, synthetic probes, bottleneck simulation.
+
+
+
+
