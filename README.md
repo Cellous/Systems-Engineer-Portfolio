@@ -18,6 +18,7 @@ Portfolio highlights include:
 Clone the repository:
 
 git clone https://github.com/Cellous/Systems-Engineer-Portfolio.git
+
 cd Systems-Engineer-Portfolio
 
  Requirements:
