@@ -1,9 +1,9 @@
 # Systems-Engineer-Portfolio
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
-![PowerShell](https://img.shields.io/badge/PowerShell-7%2B-5391FE)
+![Python](https://img.shields.io/badge/Python-3.9+-blue)
+![PowerShell](https://img.shields.io/badge/PowerShell-7+-5391FE)
 ![Terraform](https://img.shields.io/badge/Terraform-IaC-purple)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
-> A portfolio for demonstrating enterprise systems engineering, monitoring automation, and ITIL-aligned infrastructure solutions.
+> A practical Systems Engineer portfolio combining monitoring, automation, and cloud operations with ITIL-based structure.
 
 This project is designed as a portfolio showcase for Systems Engineer roles, demonstrating practical skills in enterprise infrastructure support, monitoring, automation, cloud services, and ITIL-aligned operations.
 
@@ -85,17 +85,18 @@ Use PowerShell or Bash to run setup scripts inside `/scripts` for initializing t
 | Networking knowledge | `/docs/networking/*`, iperf & packet capture notes |
 
 ## Screenshots (Coming Soon)
-
- - Grafana dashboards for system performance
-
- - ITSM FastAPI ticketing app UI
-
- - Example PowerShell service healer in action
+- Grafana dashboards – visualizing system health metrics from Prometheus exporters  
+- ITSM FastAPI app – simple incident ticketing prototype  
+- PowerShell service healer – automated recovery script demo
  
  ## License
  This project is licensed under the MIT License – see the `LICENSE` file for details.
  
-
+---
+### Connect
+- LinkedIn: [Marcellous Searcy](https://www.linkedin.com/in/marcellous-searcy)
+- GitHub: [@Cellous](https://github.com/Cellous)
+- Email: marcelloussearcy@yahoo.com
 
 
 
