@@ -1,4 +1,9 @@
 # Systems-Engineer-Portfolio
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![PowerShell](https://img.shields.io/badge/PowerShell-7%2B-5391FE)
+![Terraform](https://img.shields.io/badge/Terraform-IaC-purple)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+> A portfolio for demonstrating enterprise systems engineering, monitoring automation, and ITIL-aligned infrastructure solutions.
 
 This project is designed as a portfolio showcase for Systems Engineer roles, demonstrating practical skills in enterprise infrastructure support, monitoring, automation, cloud services, and ITIL-aligned operations.
 
@@ -17,8 +22,8 @@ Portfolio highlights include:
 ## Getting Started
 Clone the repository:
 
+ To clone and explore locally:
   git clone https://github.com/Cellous/Systems-Engineer-Portfolio.git
-
   cd Systems-Engineer-Portfolio
 
  Requirements:
@@ -30,6 +35,7 @@ Clone the repository:
   - PowerShell 7+
 
   - Terraform CLI
+Use PowerShell or Bash to run setup scripts inside `/scripts` for initializing the demo environments.
  
 ## Key Skills Demonstrated
 
@@ -45,6 +51,12 @@ Clone the repository:
 
  - Networking & Performance – TCP/IP diagnostics, packet captures, bottleneck simulations
  
+### Technologies Used
+- **Languages:** Python, PowerShell, YAML
+- **Tools:** Terraform, Docker, Grafana, Prometheus, Azure Monitor
+- **Cloud/Infra:** Azure, VMware vSphere, Citrix
+- **Frameworks:** FastAPI (for ITSM mini-app)gies Used
+
 ## Repository Structure
 /docs               → Architecture diagrams, ITIL runbooks, PIR templates
 /monitoring         → Prometheus + Grafana stack (docker-compose)
