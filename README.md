@@ -126,7 +126,8 @@ Reached MaxDurationSec=60. Exiting.
 - Automatically restarts the service if it goes to Stopped or Paused state.
 - Saves all logs to .\logs\service_healer.log for review.
   
-![PowerShell] [Service Healer Demo](docs/screenshots/service_healer_demo.gif)
+![PowerShell Service Healer Demo](docs/screenshots/service_healer_demo.gif)
+
 
   
 ### Features Demonstrated
