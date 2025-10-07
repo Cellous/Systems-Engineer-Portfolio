@@ -86,45 +86,46 @@ Use PowerShell or Bash to run setup scripts inside `/scripts` for initializing t
 
 ## PowerShell Automation – Service Healer Script
 
-This PowerShell automation script (service_healer.ps1) monitors a Windows service and automatically restarts it if it stops responding. It’s useful for demonstrating proactive system monitoring and recovery scripting in enterprise environments.
+This PowerShell automation script (service_healer.ps1) monitors a Windows service and automatically restarts it if it stops responding.
+It demonstrates proactive system monitoring, recovery automation, and logging — valuable for enterprise operations and DevOps portfolios.
 
 ### How to Run the Script
-
 1. Open the project folder in VS Code
-   
 cd F:\GitHub\Systems-Engineer-Portfolio
 code .
 
 2. Run the PowerShell script
-
 pwsh -File scripts\powershell\service_healer.ps1 `
   -ServiceName Spooler `
   -IntervalSec 10 `
   -MaxRestarts 2 `
   -MaxDurationSec 60
 
-- ServiceName — Windows service to monitor (e.g., Spooler, wuauserv, LanmanWorkstation)
-- IntervalSec — Check frequency in seconds
-- MaxRestarts — Number of restart attempts before giving up
-- MaxDurationSec — Time limit before automatic stop
+| Parameter |	Description |
+|-----------|-------------|
+| ServiceName	| Windows service to monitor (e.g., Spooler, wuauserv, LanmanWorkstation)|
+| IntervalSec |	Check frequency in seconds |
+| MaxRestarts	| Number of restart attempts before giving up |
+| MaxDurationSec |	Time limit before automatic stop |
+3. Stop the script
 
-3. Stop the script anytime
 Press Ctrl + C in VS Code’s terminal to stop monitoring.
 
 4. View the log file
-
 Get-Content .\logs\service_healer.log -Tail 20
 
-
-Example output:
-
+### Example Output
 2025-10-06 16:30:12Z CPU: 3.2% FreeMem: 1065MB Spooler=Running
 Reached MaxDurationSec=60. Exiting.
 
 ### Features Demonstrated
+
 - Monitors Windows service health and uptime
+
 - Logs CPU and memory usage snapshots
-- Attempts automated recovery with restart limit
+
+- Attempts automated recovery with restart limits
+
 - Implements clean exit and transcript logging
 
 ### Screenshots (Coming Soon)
