@@ -18,7 +18,7 @@ Portfolio highlights include:
  - Automation with PowerShell DSC and Python scripts
 
  - Security, backup, and redundancy strategies
-
+---
 ## Getting Started
 Clone the repository:
 
@@ -84,6 +84,7 @@ Use PowerShell or Bash to run setup scripts inside `/scripts` for initializing t
 | Azure & VMware experience | `/iac/azure/*`, `/iac/vmware/*` |
 | Networking knowledge | `/docs/networking/*`, iperf & packet capture notes |
 
+---
 ## PowerShell Automation – Service Healer Script
 
 This PowerShell automation script, service_healer.ps1, continuously monitors a Windows service and automatically restarts it if it stops responding.
@@ -148,6 +149,7 @@ Below is an actual run of the **PowerShell Service Healer** script, which automa
 
 - Saves detailed logs to .\logs\service_healer.log for post-run analysis.
 
+---
 ## How It Works Internally
 
 The service_healer.ps1 script uses PowerShell’s built-in system diagnostics, process monitoring, and event logging capabilities to simulate a self-healing process used in DevOps and enterprise environments.
@@ -156,11 +158,11 @@ The service_healer.ps1 script uses PowerShell’s built-in system diagnostics, p
 
 When the script starts, it reads all user-defined parameters:
 
--ServiceName identifies the Windows service to monitor.
+- ServiceName identifies the Windows service to monitor.
 
--IntervalSec, MaxRestarts, and MaxDurationSec define the script’s behavior and timing.
+- IntervalSec, MaxRestarts, and MaxDurationSec define the script’s behavior and timing.
 
--A dedicated log path is created dynamically if it doesn’t exist:
+- A dedicated log path is created dynamically if it doesn’t exist:
 
 $logDir = Split-Path -Path $LogPath -Parent
 New-Item -ItemType Directory -Force -Path $logDir | Out-Null
@@ -169,11 +171,11 @@ New-Item -ItemType Directory -Force -Path $logDir | Out-Null
 
 Within a timed loop, the script:
 
--Collects CPU and memory statistics using .NET and Get-Counter.
+- Collects CPU and memory statistics using .NET and Get-Counter.
 
--Retrieves the current service status via Get-Service.
+- Retrieves the current service status via Get-Service.
 
--Logs each check to the transcript file.
+- Logs each check to the transcript file.
 
 #### Example entry:
 
@@ -192,21 +194,21 @@ Each attempt is logged, and if the MaxRestarts limit is reached, the loop exits 
 
 When the script reaches the specified MaxDurationSec or user interrupts with Ctrl + C, it:
 
--Stops the transcript cleanly using Stop-Transcript
+- Stops the transcript cleanly using Stop-Transcript
 
--Appends final status logs
+- Appends final status logs
 
--Writes “Exiting” to the log file for traceability
+- Writes “Exiting” to the log file for traceability
 
 ### 5. Why It Matters
 
 This automation demonstrates:
 
--System Reliability Engineering (SRE) principles through service recovery automation
+- System Reliability Engineering (SRE) principles through service recovery automation
 
--PowerShell diagnostics for proactive infrastructure management
+- PowerShell diagnostics for proactive infrastructure management
 
--A lightweight alternative to enterprise monitoring tools like Nagios or Prometheus node exporters
+- A lightweight alternative to enterprise monitoring tools like Nagios or Prometheus node exporters
 
 ### Screenshots (Coming Soon)
 - Grafana dashboards – visualizing system health metrics from Prometheus exporters  
