@@ -125,7 +125,9 @@ Reached MaxDurationSec=60. Exiting.
 - Logs CPU %, memory (MB), and current service status every IntervalSec.
 - Automatically restarts the service if it goes to Stopped or Paused state.
 - Saves all logs to .\logs\service_healer.log for review.
-  
+
+### Demo  
+Below is an actual run of the **PowerShell Service Healer** script, which automatically monitors and restarts Windows services.
 ![PowerShell Service Healer Demo](docs/screenshots/service_healer_demo.gif)
 
 
