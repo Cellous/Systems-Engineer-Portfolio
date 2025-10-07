@@ -121,11 +121,12 @@ Get-Content .\logs\service_healer.log -Tail 20
 2025-10-06 16:29:57Z CPU: 2.5% FreeMem: 1065MB Spooler=Running
 2025-10-06 16:30:12Z CPU: 3.1% FreeMem: 1064MB Spooler=Running
 Reached MaxDurationSec=60. Exiting.
-
+#### What the script does:
 - Logs CPU %, memory (MB), and current service status every IntervalSec.
 - Automatically restarts the service if it goes to Stopped or Paused state.
 - Saves all logs to .\logs\service_healer.log for review.
-![PowerShell Service Healer Demo](docs/screenshots/service_healer_demo.gif)
+  
+![PowerShell] [Service Healer Demo](docs/screenshots/service_healer_demo.gif)
 
   
 ### Features Demonstrated
