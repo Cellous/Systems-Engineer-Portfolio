@@ -115,9 +115,18 @@ Press Ctrl + C in VS Code’s terminal to stop monitoring.
 Get-Content .\logs\service_healer.log -Tail 20
 
 ### Example Output
-2025-10-06 16:30:12Z CPU: 3.2% FreeMem: 1065MB Spooler=Running
+2025-10-06 16:29:12Z CPU: 2.1% FreeMem: 1068MB Spooler=Running
+2025-10-06 16:29:27Z CPU: 2.3% FreeMem: 1066MB Spooler=Running
+2025-10-06 16:29:42Z CPU: 2.2% FreeMem: 1067MB Spooler=Running
+2025-10-06 16:29:57Z CPU: 2.5% FreeMem: 1065MB Spooler=Running
+2025-10-06 16:30:12Z CPU: 3.1% FreeMem: 1064MB Spooler=Running
 Reached MaxDurationSec=60. Exiting.
+- Logs CPU %, memory (MB), and current service status every IntervalSec.
+- Automatically restarts the service if it goes to Stopped or Paused state.
+- Saves all logs to .\logs\service_healer.log for review.
+- ![PowerShell Service Healer Demo](docs/screenshots/service_healer_demo.gif)
 
+  
 ### Features Demonstrated
 
 - Monitors Windows service health and uptime
